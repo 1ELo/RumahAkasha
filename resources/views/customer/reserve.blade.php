@@ -109,7 +109,7 @@
                                                             <span class="menu-quantity" id="quantity-{{ $menu->id_menu }}">0</span>
                                                             <button type="button" class="btn btn-sm btn-outline-secondary plus-btn" onclick="increaseQuantity({{ $menu->id_menu }})">+</button>
                                                         </div>
-                                                        <img src="{{ asset(str_replace('../public/', '', $menu->image)) }}" alt="{{ $menu->name }}" class="img-fluid mb-2">
+                                                        <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$menu->image))) }}" alt="{{ $menu->name }}" class="img-fluid mb-2">
                                                         <div class="menu-card-title">{{ $menu->name }}</div>
                                                         <div class="menu-card-price"><p>Rp.{{ number_format($menu->price, 2) }}</p></div>
                                                         <input type="number" name="menu[{{ $menu->id_menu }}][jumlah_menu]" class="form-control mb-2" min="0" placeholder="Jumlah" id="input-quantity-{{ $menu->id_menu }}" value="0" hidden>
