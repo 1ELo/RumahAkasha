@@ -37,7 +37,7 @@
     <div class="grid-container">
         @foreach ($previousEvents as $event)
             <div class="card">
-                <img src="{{ asset(str_replace('../public', '', $event->image)) }}" class="card-img-top" alt="{{ $event->title }}">
+                <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$event->image))) }}" class="card-img-top" alt="{{ $event->title }}">
                 <div class="card-body">
                     <h1>{{ $event->title }}</h1>
                     <h5>{{ $event->date }}</h5>

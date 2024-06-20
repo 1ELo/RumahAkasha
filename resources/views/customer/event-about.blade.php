@@ -14,7 +14,7 @@
 
     <section class="event-container">
         <div class="event_image">
-            <img src="{{ asset(str_replace('../public', '', $event->image)) }}" alt="image_event">
+            <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$event->image))) }}" alt="image_event">
         </div>
 
         <div class="event-details">

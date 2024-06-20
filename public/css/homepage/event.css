@@ -49,7 +49,7 @@ section{
 /* Event Up */
 
 #background-event {
-    background-image:url('RumahAkasha/public/img/akasha/img10.jpeg');
+    background-image:url('/RumahAkasha/public/img/akasha/img10.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
