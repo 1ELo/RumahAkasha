@@ -47,7 +47,7 @@
                                                 </td>
                                                 <td>
                                                     <form action="{{ route('destroy.event', $event->id) }}" method="POST">
-                                                        <a href="{{url('/api/edit-event/{{$event->id}}')}}" class="action-btn" title="Edit"><span class="las la-edit"></span></a>
+                                                        <a href="{{ url('/api/edit-event/' . $event->id) }}><span class="las la-edit"></span></a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="action-btn" title="Delete" onclick="confirmDelete('{{$event->id}}', '{{$event->title}}')"><span class="las la-trash-alt"></span></button>
