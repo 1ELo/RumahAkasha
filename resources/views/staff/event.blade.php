@@ -46,7 +46,9 @@
                                         </td>
                                         <td>
                                             <form action="{{ route('destroy.event', $event->id) }}" method="POST">
-                                                <a href="{{url('/api/edit-event/{{$event->id}}')}}" class="action-btn" title="Edit"><span class="las la-edit"></span></a>
+                                                <a href="{{ url('/api/edit-event/' . $event->id) }}" class="action-btn" title="Edit">
+                                                    <span class="las la-edit"></span>
+                                                </a>
                                                 <a href="{{ route('staff.event.participants', $event->id) }}" class="action-btn" title="Checklist"><span class="las la-tasks"></span></a>
                                                 @csrf
                                                 @method('DELETE')
