@@ -28,7 +28,7 @@
                                                 @foreach ($menu as $item)
                                                 <tr>
                                                     <td>{{ $item->name }}</td>
-                                                    <td><img src="{{ asset(str_replace('../public', '', $item->image)) }}" width="60px" height="60px" alt="Menu Image"></td>
+                                                    <td><img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$item->image))) }}" width="60px" height="60px" alt="Barista Image"></td>
                                                     <td>Rp {{ $item->price }}</td>
                                                     <td>{{ $item->description }}</td>
                                                     {{-- <td>{{ $menuSignature->kategori }}</td> --}}
