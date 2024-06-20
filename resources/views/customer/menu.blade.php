@@ -20,7 +20,7 @@
             @foreach ($bestSellerMenus as $menu)
                 <div class="card best-seller-card">
                     <div class="card-img">
-                        <img src="{{ asset(str_replace('../public/', '', $menu->image)) }}" alt="{{ $menu->name }}">
+                        <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$menu->image))) }}" alt="{{ $menu->name }}">
 
                     </div>
                     <div class="menu-name">
@@ -42,7 +42,7 @@
                         <div class="menu-content">
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="{{ asset(str_replace('../public/', '', $men_cof->image)) }}" alt="{{ $men_cof->name }}">
+                                    <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$menu->image))) }}" alt="{{ $men_cof->name }}">
                                 </div>
                                 <div class="menu-name">
                                     <h5>{{ $men_cof->name }}</h5>
