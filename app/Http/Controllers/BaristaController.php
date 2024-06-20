@@ -6,6 +6,8 @@ use GuzzleHttp\Client;
 use App\Models\Barista;
 use Illuminate\Http\Request;
 
+// TESSSS UBUNTU
+
 class BaristaController extends Controller
 {
     public function store(Request $request)
