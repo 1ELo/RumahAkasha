@@ -6,6 +6,17 @@
 <head>
 <link rel="stylesheet" href="{{ asset('css/homepage/event.css') }}">
 </head>
+
+<style>
+    #background-event{
+        background-image: url('{{asset('/img/akasha/img10.jpeg') }}');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        margin-top: 50px;
+    }
+</style>
+
 <section id="background-event" class="up-event">
     <div class="event-up">
         <div class="title">

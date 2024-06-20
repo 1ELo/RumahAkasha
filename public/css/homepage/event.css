@@ -46,16 +46,6 @@ section{
     margin-left: 50px;
 }
 
-/* Event Up */
-
-#background-event {
-    background-image:url('/RumahAkasha/public/img/akasha/img10.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-top: 50px;
-}
-
 /* Content Upcoming */
 
 .event-up{

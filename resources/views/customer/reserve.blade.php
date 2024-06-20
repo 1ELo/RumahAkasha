@@ -10,6 +10,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <style>
+        section#background-reserve {
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0)),
+            url('/img/akasha/img3.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 730px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
     <!--reservation landpage-->
     <section id="background-reserve" class="up-reserve">
         <div class="container-xxl py-5 hero-header mb-5">

@@ -31,20 +31,6 @@ body::-webkit-scrollbar {
     --box-shadow: 0 2px 4px var(--primary-color);
 }
 
-section#background-reserve {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0)),
-    url('/img/akasha/img3.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 730px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .reserve-title {
     font-size: 100px;
     font-weight: bold;
