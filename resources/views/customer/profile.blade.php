@@ -42,7 +42,7 @@
     <div class="grid-container">
         @foreach ($barista as $baristas)
             <div class="card">
-                <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$barista->foto_barista)))}}" class="card-img-top">
+                <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$baristas->foto_barista)))}}" class="card-img-top">
                 <div class="card-body">
                     <div class="card-text">
                         <div class="barista">
