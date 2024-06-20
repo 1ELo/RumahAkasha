@@ -26,7 +26,7 @@
                                     @foreach($baristas as $barista)
                                         <tr>
                                             <td>
-                                                <img src="{{ asset(str_replace('../public', '', $barista->foto_barista)) }}" width="60px" height="60px" alt="Barista Image">
+                                                <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/public/img/barista/', str_replace('../public', '',$barista->foto_barista))) }}" width="60px" height="60px" alt="Barista Image">
                                             </td>
                                             <td>{{ $barista->nama_barista }}</td>
                                             <td>{{ $barista->deskripsi }}</td>

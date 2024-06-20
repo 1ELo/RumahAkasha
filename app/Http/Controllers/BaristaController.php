@@ -14,7 +14,7 @@ class BaristaController extends Controller
     {
         $client = new Client();
 
-        $response = $client->post('http://localhost:8080/api/create-barista', [
+        $response = $client->post('http://192.168.244.132:8080/api/create-barista', [
             'multipart' => [
                 [
                     'name'     => 'nama_barista',
@@ -96,7 +96,7 @@ class BaristaController extends Controller
         ];
     }
 
-    $response = $client->request('PUT', 'http://localhost:8080/api/edit-barista', [
+    $response = $client->request('PUT', 'http://192.168.244.132:8080/api/edit-barista', [
         'multipart' => $multipart
     ]);
 
@@ -109,7 +109,7 @@ class BaristaController extends Controller
     {
         $client = new \GuzzleHttp\Client();
 
-        $response = $client->delete("http://localhost:8080/api/delete-barista?id_barista=$id");
+        $response = $client->delete("http://192.168.244.132:8080/api/delete-barista?id_barista=$id");
 
         return redirect()->route('baristas.index');
     }
