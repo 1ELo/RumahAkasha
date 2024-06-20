@@ -31,7 +31,7 @@
                                         <td>{{$event->title}}</td>
                                         <td>{{$event->date}}</td>
                                         <td>{{$event->time}}</td>
-                                        <td><img src="{{ asset(str_replace('../public/', '', $event->image)) }}" width="60px" height="60px" alt="Event Image"></td>
+                                        <td><img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$event->image))) }}" width="60px" height="60px" alt="Barista Image"></td>
                                         <td>{{$event->description}}</td>
                                         <td>Rp {{$event->fee}}</td>
                                         <td>
