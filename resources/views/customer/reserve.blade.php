@@ -13,7 +13,7 @@
     <style>
         section#background-reserve {
             background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0)),
-            url('/img/akasha/img3.jpg');
+            url('{{asset('/img/akasha/img3.jpg') }}');
             background-size: cover;
             background-position: center;
             position: relative;

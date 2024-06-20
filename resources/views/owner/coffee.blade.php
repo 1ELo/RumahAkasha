@@ -8,7 +8,7 @@
                 <div class="event">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Menu Food</h3>
+                            <h3>Menu Coffee</h3>
                             <a class="add-btn" href="{{url('/owner/add-coffee')}}">+ Add</a>
                         </div>
                             <div class="scroll-container">
