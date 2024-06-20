@@ -42,7 +42,7 @@
                         <div class="menu-content">
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$menu->image))) }}" alt="{{ $men_cof->name }}">
+                                    <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$men_cof->image)))}}" alt="{{ $men_cof->name }}">
                                 </div>
                                 <div class="menu-name">
                                     <h5>{{ $men_cof->name }}</h5>
@@ -64,7 +64,7 @@
                         <div class="menu-content">
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="{{ asset(str_replace('../public/', '', $men_noncoff->image)) }}" alt="{{ $men_noncoff->name }}">
+                                    <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$men_noncoff->image))) }}" alt="{{ $men_noncoff->name }}">
                                 </div>
                                 <div class="menu-name">
                                     <h5>{{ $men_noncoff->name }}</h5>
@@ -86,7 +86,7 @@
                     <div class="menu-content">
                         <div class="card">
                             <div class="card-img">
-                                <img src="{{ asset(str_replace('../public/', '', $men_sig->image)) }}" alt="{{ $men_sig->name }}">
+                                <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$men_sig->image))) }}" alt="{{ $men_sig->name }}">
                             </div>
                             <div class="menu-name">
                                 <h5>{{ $men_sig->name }}</h5>
@@ -108,7 +108,7 @@
                         <div class="menu-content">
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="{{ asset(str_replace('../public/', '', $men_food->image)) }}" alt="{{ $men_food->name }}">
+                                    <img src="{{ asset(str_replace('/mnt/laravel_barista_images/', '/img/barista/', str_replace('../public', '',$men_food->image))) }}" alt="{{ $men_food->name }}">
                                 </div>
                                 <div class="menu-name">
                                     <h5>{{ $men_food->name }}</h5>
