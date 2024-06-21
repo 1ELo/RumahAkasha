@@ -15,7 +15,7 @@
         </div>
 
         <div class="form-login">
-            <form action="/create" method="POST" name="register">
+            <form action="{{url('/create')}}" method="POST" name="register">
                 @csrf
 
                 <div class="input-group">
